@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
     <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
     <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
@@ -26,12 +27,12 @@
 </head>
 
 <body>
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>Bienvenido</h1>
+        <a href="#myPanel" data-transition="slide" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Panel</a>
+    </div>
     <div data-role="page">
-        <div data-role="header">
-            <h1>Bienvenido</h1>
-        </div>
         <div data-role="main" class="ui-content">
-            <a href="#myPanel" data-transition="slide" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Panel</a>
             
             <p>Soy mobile developer</p>
             <a href="#pageone" data-transition="fade">Ir a página 1</a>
@@ -48,13 +49,6 @@
             <a href="#pagetwo" data-transition="flip" class="ui-btn ui-icon-back ui-btn-icon-notext">Texto omitido</a>
             <a href="#pagetwo" data-transition="flip" class="ui-btn ui-icon-back ui-btn-icon-notext ui-nodisc-icon">Texto omitido</a>            
         </div>
-        <div data-role="footer">
-            <h1>I made this</h1>
-        </div>
-            <div data-role="panel" id="myPanel">
-        <h2>Panel Header</h2>
-        <p>Some text...</p>
-    </div>
     </div>
         
     <div data-role="page" id="pageone">
@@ -67,6 +61,13 @@
             <a href="#pageone">Ir a página 1</a>
         </div>
     </div>
+    <div data-role="footer" data-position="fixed" data-theme="a">
+        <h1>I made this</h1>
+    </div>
     
+    <div data-role="panel" id="myPanel">
+        <h2>Panel Header</h2>
+        <p>Some text...</p>
+    </div>
 </body>
 </html>
