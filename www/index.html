@@ -31,6 +31,8 @@
             <h1>Bienvenido</h1>
         </div>
         <div data-role="main" class="ui-content">
+            <a href="#myPanel" data-transition="slide" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Panel</a>
+            
             <p>Soy mobile developer</p>
             <a href="#pageone" data-transition="fade">Ir a página 1</a>
             <a href="#pagetwo" data-transition="flip">Ir a página 2</a>
@@ -45,11 +47,14 @@
             </div>
             <a href="#pagetwo" data-transition="flip" class="ui-btn ui-icon-back ui-btn-icon-notext">Texto omitido</a>
             <a href="#pagetwo" data-transition="flip" class="ui-btn ui-icon-back ui-btn-icon-notext ui-nodisc-icon">Texto omitido</a>            
-            <a href="#myPanel" data-transition="slide" class="ui-btn ui-icon-bars ui-btn-icon-left">Panel</a>
         </div>
         <div data-role="footer">
             <h1>I made this</h1>
         </div>
+            <div data-role="panel" id="myPanel">
+        <h2>Panel Header</h2>
+        <p>Some text...</p>
+    </div>
     </div>
         
     <div data-role="page" id="pageone">
@@ -63,9 +68,5 @@
         </div>
     </div>
     
-    <div data-role="panel" id="myPanel">
-        <h2>Panel Header</h2>
-        <p>Some text...</p>
-    </div>
 </body>
 </html>
